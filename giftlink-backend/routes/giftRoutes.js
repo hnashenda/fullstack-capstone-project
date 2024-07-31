@@ -1,3 +1,7 @@
+const express = require('express');
+const router = express.Router();
+const { connectToDatabase } = require('../path/to/your/database/connection/file'); // Adjust the path as necessary
+
 router.get('/', async (req, res) => {
     try {
         // Task 1: Connect to MongoDB
