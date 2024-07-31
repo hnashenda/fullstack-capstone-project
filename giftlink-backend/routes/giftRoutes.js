@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { connectToDatabase } = require('../path/to/your/database/connection/file'); // Adjust the path as necessary
+const connectToDatabase = require('../models/db');
 
 router.get('/', async (req, res) => {
     try {
